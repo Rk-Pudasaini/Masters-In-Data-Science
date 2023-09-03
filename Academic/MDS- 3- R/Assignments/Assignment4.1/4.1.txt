@@ -1,0 +1,70 @@
+Use the "mtcars" data and do as follows in R Studio and submit the compiled PDF report file with codes and outputs here:
+
+1. Fit multiple linear regression with mpg as dependent variable and rest of the variables in the mtcars data as independent variables and save it as mlr object 
+2. Get the summary of mlr and interpret the result carefully
+3. Get the VIF of mlr model and drop variables with VIF > 10 one-by-one until none of the predictors have VIF > 10
+4. Fit the mlr model with predictors having VIF <=10, get the summary of mlr and interpret the result carefully
+5. Fit lasso regression with mpg as dependent variable and rest of the variables in the mtcars data as independent variables as cv_model object using cv.glmnet model included in the glmnet package
+6. Get the best lambda value from the lasso regression fitted above, plot the cv_model and interpret them carefully
+7. Fit the best lasso regression model as best_model using the best_lambda value obtained above
+8. Get the coefficients of the best_model and identify the important variables with s0 non-missing values
+9. Fit the multiple linear regression model using the independent variables obtained from the best_model above
+10. Compare the statistically significant variables obtained from step 4 and step 9
+11. Write a summary for handling multicollinearity with VIF dropouts and LASSO regression
+
+
+
+
+
+First check the normality of dependent variable 
+
+# QQ plot
+qqnorm(dependent_variable)
+qqline(dependent_variable)
+
+Shapiro-Wilk test: Use the Shapiro-Wilk test, which is a common statistical test for normality. The null hypothesis is that the data is normally distributed. If the p-value is greater than the chosen significance level (e.g., 0.05), we do not reject the null hypothesis.
+
+shapiro.test(dependent_variable)
+
+***********************
+#Use random seed to replicate the result
+set.seed(1234)
+#Do random sampling to divide the cases into two independent samples
+ind <- sample(2, nrow(mtcars), replace = T, prob = c(0.7, 0.3))
+#Data partition
+train.data <- data[ind==1,]
+test.data <- data[ind==2,]
+
+
+select(dataframe,-c(column1,column2,.,column n))
+
+
+Fitting multiple linear regression model using
+“mtcars” data:
+
+• mlr <- lm(mpg ~., data = mtcars)
+
+• summary(mlr)
+
+• library(car)
+
+• vif(mlr)
+
+• We need to drop the independent
+variable with highest VIF and run the
+model again until all the VIF <10!
+
+• None of the variables used in the
+model are statistically significant!
+> vif(mlr)
+
+cyl disp hp
+
+15.373833 21.620241 9.832037
+drat wt qsec
+3.374620 15.164887 7.527958
+vs am gear
+4.965873 4.648487 5.357452
+carb
+7.908747
+

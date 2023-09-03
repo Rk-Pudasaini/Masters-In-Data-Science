@@ -1,0 +1,12 @@
+***********************************************888
+Do as follows in R Studio and submit/attach the compiled PDF report file with codes and outputs here:
+
+1. Generate a 1000 random data with 10 variables [five continuous: age (18 to 90 years), height (150 - 180 cm), weight (50 - 90 kg), income (10000 - 200000), diastolic blood pressure (70 - 170 mm Hg) and five categorical: sex (male/female), education (no education, primary, secondary, tertiary), place of residence (rural/urban), socio-economic status (low/medium/high) and exercise (yes/no)] using set.seed(your roll number and save it as SR object
+2. Randomly split the SR object data as SR.train (70%) and SR.test (30%) with replacement sampling and fit multiple linear regression with diastolic blood pressure as dependent variable and rest of variables as independent variable and get fit indices (R-Square, MSE, RMSE and MAE) for the SR.test data
+3. Fit the multiple linear regression model with Leave One Out Cross-Validation, k-fold cross validation, repeated k-fold cross validation methods and get fit indices for SR.test data and, compare the fit indices of supervised regression models fitted in step 2 and 3 above with careful interpretation
+4. Fit KNN regression, Decision Tree regression, SVM regression and Neural Network regression using the same dependent and independent variables, get and compare fit indices of these models for SR.test data
+5. Which supervised regression model is the best model for doing prediction in the SR.test data? Why?
+6. Predict diastolic blood pressure of a person with 50 years, 175mm height, 80 kg weight, 90000 income, male, tertiary level education, living in urban area, medium socio-economic status and no exercise and interpret the result carefully
+7. Write a reflection of the assignment on your own words focusing on "what did I learn with this assignment?"
+
+Hint: See session 21 and session 22 slides!

@@ -1,0 +1,28 @@
+Class work: Assignment 3.1
+Locate median graphically for “mpg” variable
+• Create a more than cumulative
+frequency curve of “mpg” using
+cumsum function
+
+• Create a less than cumulative
+frequency curve of “mpg” using
+cumsum function
+
+• Draw both of them in a single plot
+
+• The point of intersection of more
+than and less than cumulative
+frequency curve will locate the
+“median” value
+
+• Draw a perpendicular to the x-axis
+with mpg value from this point of
+intersection to find the median
+
+• Compare it with the result of the
+“median” function of R!
+
+
+using the mtcars data set in r. Create a more than cumulative
+frequency curve of “mpg” using
+cumsum function

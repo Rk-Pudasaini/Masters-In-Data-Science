@@ -1,0 +1,30 @@
+Use the attached twitter data in r data format and do as follows:
+
+1. Load the attached "termDocMatrix.rdata" file in R/R studio
+2. Check the structure of this data and comment on it carefully
+3. Inspect the first 10 rows and first 10 columns of this data using sub-setting
+4. Convert the loaded termDocMatrix data to as matrix with appropriate R code
+5. Change this matrix to a Boolean matrix with same name (Hint: [termDocMatrix >=1] < 1)
+6. Transform this matrix to a term-term adjacency matrix as termMatrix object (Hint: Use %*% and t(termDocMatrix)
+7. Inspect the first 10 rows and first 10 columns of this matrix using sub-setting
+8. Define a graph object g of termMatrix using graph.adjacency function of "igraph" package with weighted=T and mode="undirected" arguments in the function
+9. Remove loops of g using simplify function
+10. Set vertices labels with names of g
+11. Set degree with degree of g
+12. Find degree of g for 'all", "in" and "out" modes and interpret them carefully
+13. Find diameter of g and interpret it carefully
+14. Find edge density of g and interpret it carefully
+15. Find reciprocity of g and interpret it carefully
+16. Find closeness of g and interpret it carefully
+17. Find betweenness of g and interpret it carefully
+18. Plot histogram of node degree and interpret it carefully
+19. Set seed as per your class roll number
+20. plot g with vertex.size of degree*0.4 and interpret it carefully
+21. plot g with fruchterman.reingold layout and interpret it carefully
+22. plot g with kamada.kawai layout and interpret it carefully
+23. plot hub and authority of g and interpret them carefully
+24. Plot community cluster of g and interpret it carefully
+25. Write a summary of SNA for the twitter data
+
+
+Submit the R Script and knitted HTML file here for review and grading.
