@@ -1,0 +1,30 @@
+A2: Programs of Supervised Learning
+Due November 1, 2023 11:59 PM
+Instructions
+1.Write a program in python using scikit learn to train Logistic Regression that predicts quantitative measure of progression driven by various attributes. 
+
+Dataset: https://www4.stat.ncsu.edu/~boos/var.select/diabetes.html 
+
+2.       Using Iris Plant Dataset, write a scratch program in python to train softmax regression that predicts the class of Iris plant. 
+
+Dataset: https://www.kaggle.com/datasets/arshid/iris-flower-dataset 
+
+3.       Compare the accuracy, precision, recall and accuracy of following three classification algorithms for Wine Quality Prediction. 
+
+Logistic Regression Classifier 
+Support Vector Classifier 
+Naïve Bayes Classifier 
+KNN Algorithm 
+Decision Tree Classifier 
+
+Dataset: https://archive.ics.uci.edu/dataset/186/wine+quality 
+4.       Implement Stacking ensemble method in the questions no. 3 and train the meta learner for prediction. 
+
+5.       Implement bagging method to train machine learning on SMS spam detection. 
+
+Dataset: https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset 
+
+
+
+
+Note: For all the programs you can use sklearn dataset as well, if available. 
